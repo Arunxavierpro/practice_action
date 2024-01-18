@@ -20,4 +20,4 @@ jobs:
     - name: Build the Docker image # push The image to the docker hub
       run: docker build . --tag reelsarun/:${{ steps.date.outputs.date }}
     - name: Docker Push
-      run: docker push reelsarun/pushdocker
+      run: docker push reelsarun/push_docker
